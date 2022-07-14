@@ -1,0 +1,19 @@
+<html>
+<head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+<body style="padding: 1em">
+    <h1>Edit Friends and Family Information</h1>
+    <div>
+        <form method="post" action="/fnf/update">
+            <input type="text" name="name" placeholder="Name" size="50" value="{{member.name}}"><br/><br/>
+            <input type="text" name="relation" placeholder="Relation" size="50" value="{{member.relation}}"><br/><br/>
+            <input type="text" name="phone" placeholder="Phone" size="50" value="{{member.phone}}"><br/><br/>
+            <input type="text" name="email" placeholder="Email" size="50" value="{{member.email}}"><br/><br/>
+            <input type="hidden" name="id" value="{{member._id}}"><br/><br/>
+            <input type="submit" class="btn btn-success" placeholder="Submit">
+            <a href="/" class="btn btn-secondary" >Cancel</a>
+        </form>
+    </div>
+</body>
+</html>
